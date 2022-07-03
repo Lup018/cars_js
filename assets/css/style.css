@@ -46,4 +46,10 @@ input {
     margin: 0.5em;
 }
 
+.circle{
+    height: 1em;
+    width: 1em;
+    border: solid black 1px;
+    border-radius: 50%;
+}
 

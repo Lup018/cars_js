@@ -14,21 +14,29 @@
         <div class="card">
             <img src="./assets/img/note-hp.jpg" alt="">
             <h3>Notebook HP</h3>
-            <input type="text">
-            <input type="text">
-            <h3>Precio: 400.000</h3>
-            <button>Total</button>
+            <select id="colores" placeholder="color">
+              <option value="blue">Azul</option>
+              <option value="black">Negro</option>
+              <option value="green">Verde</option>
+            </select>
+            <select id="precio">
+              <option value="50000">$50.000</option>
+              <option value="100000">$100.000</option>
+              <option value="150000">$150.000</option>
+            </select>
+            <input id="cantidad">Cantidad:</input>
+            <button onclick="" id ="boton">Total</button>
         </div>
 
         <!--DIV DE DETALLES-->
         <section class="details">
-            <div>Total: </div>
-            <div>Cantidad:</div>
+            <p>Total: <span id="total">0</span></p>
+            <p>Cantidad: <span id="cantidadLaptop">0</span> </p>
             <div class="div-color">
-              <div>Color: </div>
-              <div class="circle"></div>
+            <div class="circle" id="circle"></div>
             </div>
         </section>
     </div>
+    <script src="./assets/js/card.js"></script>
 </body>
 </html>
